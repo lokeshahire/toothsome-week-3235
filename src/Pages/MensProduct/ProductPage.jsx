@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import styles from "./HomePage.module.css";
+import styles from "./ProductPage.module.css";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import ProductItem from "./ProductItem";
 import { useDispatch, useSelector } from "react-redux";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -15,10 +16,9 @@ import {
   upper_filter,
   change_filter,
   change_filter_2,
-} from "../../features/Home/HomeSlice";
-import HomeItem from "./HomeItem";
+} from "../../features/Product/productSlice";
 
-const HomeProductPage = () => {
+const ProductPage = () => {
   const [accordinas, setAccordinas] = useState([]);
   const [showFilters, setShowFilters] = useState(true);
   const [upperFilters, setUpperFilters] = useState(false);
@@ -54,29 +54,13 @@ const HomeProductPage = () => {
       key: "best",
     },
   ]);
-
-  useEffect(() => {
-    document.title = "Home Accessories | J.Crew";
-    if (window.pageYOffset > 300) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  }, []);
-
   const { products_data, isLoading, isError, data, filters } = useSelector(
-    (store) => store.home
+    (store) => store.product
   );
   const handleAccordian = (index) => {
     dispatch(change_filter(index));
-    setAccordinas([...filters]);
+    // filters[index].status = !filters[index].status;
   };
-
-  useEffect(() => {
-    setAccordinas([...filters]);
-  }, [filters]);
-
   useEffect(() => {
     let filterData = [...data];
     let keys = [];
@@ -119,6 +103,20 @@ const HomeProductPage = () => {
     // setAccordinas([...filters]);
   };
 
+  useEffect(() => {
+    setAccordinas([...filters]);
+  }, [filters]);
+
+  useEffect(() => {
+    document.title = "Men's Collection";
+    if (window.pageYOffset > 300) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
   const handleUpperFilters = (value) => {
     let key = value.key;
     upperFilterProperties.map((item) =>
@@ -128,30 +126,31 @@ const HomeProductPage = () => {
     if (key === "htl") {
       let sortData = [...data];
       sortData.sort((a, b) => b.price - a.price);
+      // dispatch(handleUpperFilter(sortData));
       dispatch(upper_filter(sortData));
     } else if (key === "lth") {
       let sortData = [...data];
       sortData.sort((a, b) => a.price - b.price);
+      // dispatch(handleUpperFilter(sortData));
       dispatch(upper_filter(sortData));
     } else if (key === "f") {
+      // dispatch(handleUpperFilter(data));
       dispatch(upper_filter(data));
     } else if (key === "best") {
       let filterData = data.filter((item) => {
         return item.Trending === "best_seller";
       });
+      // dispatch(handleUpperFilter(filterData));
       dispatch(upper_filter(filterData));
     } else if (key === "top") {
       let filterData = data.filter((item) => {
         return item.Trending === "top_rated";
       });
+      // dispatch(handleUpperFilter(filterData));
       dispatch(upper_filter(filterData));
     }
   };
   const dispatch = useDispatch();
-  useEffect(() => {
-    // dispatch(get_products());
-    setAccordinas([...filters]);
-  }, []);
   return (
     <>
       <div className={styles.products_wrapper}>
@@ -294,7 +293,7 @@ const HomeProductPage = () => {
                 </Stack>
               ) : (
                 products_data?.map((item) => {
-                  return <HomeItem key={item.id} item={item} />;
+                  return <ProductItem key={item.id} item={item} />;
                 })
               )}
             </div>
@@ -305,4 +304,4 @@ const HomeProductPage = () => {
   );
 };
 
-export default HomeProductPage;
+export default ProductPage;

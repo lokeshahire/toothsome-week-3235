@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import styles from "./styles/Navbar.module.css";
-// import { HeartIcon, MainLogo } from "./SvgIcons";
+import { HeartIcon, MainLogo } from "./SvgIcons";
 import { useDispatch, useSelector } from "react-redux";
 // import { openLogin } from "../features/Login/LoginSlice";
 // import { User } from "./Icons";
@@ -16,27 +16,33 @@ export default function Navbar() {
   return (
     <div className={styles.nav_parent}>
       <div className={styles.nav_logo}>
-        {/* <MainLogo /> */}
+        <MainLogo />
         <div className={styles.nav_linkWrap}>
-          <Link to="/">
+          <Link to="/products/mens">
             <h4>New</h4>
           </Link>
-          <Link to="/mens">
-            <h4>Men</h4>
-          </Link>
-          <Link to="/women">
+          <Link to="/">
             <h4>Women</h4>
           </Link>
-          <Link to="/kids">
+          <Link to="/">
+            <h4>Men</h4>
+          </Link>
+          <Link to="/">
             <h4>Kids</h4>
           </Link>
-          <Link to="/products/home">
+          <Link to="/">
+            <h4>Swim</h4>
+          </Link>
+          <Link to="/">
+            <h4>Cashmere</h4>
+          </Link>
+          <Link to="/">
             <h4>Home</h4>
           </Link>
-          <Link to="/stories">
+          <Link to="/">
             <h4>Stories</h4>
           </Link>
-          <Link to="/sale">
+          <Link to="/">
             <h4>Sale</h4>
           </Link>
         </div>
@@ -63,29 +69,20 @@ export default function Navbar() {
             style={{ height: 36, width: 180 }}
           ></input>
         </div>
-        {/* <div
-          className={styles.nav_logIN}
-          onClick={isLogin ? undefined : () => dispatch(openLogin())}
-        >
-          {isLogin ? <User /> : "Sign In"}
-        </div> */}
-        <div className={styles.nav_icons}>{/* <HeartIcon /> */}</div>
+
+        <div className={styles.nav_icons}>
+          <HeartIcon />
+        </div>
         <div
           className={styles.nav_icons}
           onClick={() => {
             navigate("/cart");
           }}
         >
-          {/* <Cart /> */}
           <img
             src="https://www.jcrew.com/next-static/images/jcrew/svg/icon_bag_d.svg"
             alt=""
           />
-          {/* {cartItems.length != 0 ? (
-            <div className={styles.amount_container}>
-              <p className={styles.total_amount}>{cartTotalItems}</p>
-            </div>
-          ) : null} */}
         </div>
       </div>
     </div>

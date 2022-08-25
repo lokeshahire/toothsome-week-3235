@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import styles from "./HomeItem.module.css";
+import styles from "./ProductItem.module.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useDispatch, useSelector } from "react-redux";
-import { change_variant_color } from "../../features/Home/HomeSlice";
-// import ProductModal from "../../components/ProductModal";
+import ProductModal from "../../components/ProductModal";
+import { change_variant_color } from "../../features/Product/productSlice";
 import { Link } from "react-router-dom";
 
-const HomeItem = ({ item }) => {
+const ProductItem = ({ item }) => {
   const [rupee, setRupee] = useState(0);
   const [showProductPopup, setShowProductPopup] = useState(false);
-  const { products_data, data } = useSelector((store) => store.home);
+  const { products_data, data } = useSelector((store) => store.product);
   const [openModal, setOpenModal] = useState(false);
   const dispatch = useDispatch();
   const handleChangeColor = (variantID) => {
@@ -40,11 +40,11 @@ const HomeItem = ({ item }) => {
   }, [item]);
   return (
     <>
-      {/* {openModal ? (
+      {openModal ? (
         <ProductModal item={item} tooggleModal={tooggleModal} />
       ) : (
         <></>
-      )} */}
+      )}
       <div className={styles.product_item}>
         <div className={styles.relative}>
           <div className={styles.img_box}>
@@ -87,4 +87,4 @@ const HomeItem = ({ item }) => {
   );
 };
 
-export default HomeItem;
+export default ProductItem;
