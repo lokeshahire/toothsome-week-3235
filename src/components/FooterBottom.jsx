@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/FooterBottom.css";
-// import { FooterBottom_1, FooterBottom_2 } from "./SvgIcons";
-// import xyz from "../assets/india.png";
+import { FooterBottom_1, FooterBottom_2 } from "./SvgIcons";
+//import xyz from "../assets/india.png";
 import { Link } from "react-router-dom";
 
 export default function FooterBottom() {
@@ -90,8 +90,8 @@ export default function FooterBottom() {
             {/* <img className="footer_flag" src={xyz} alt="" /> */}
           </div>
           <div className="footerSvgIcons" style={{ display: "flex", gap: 20 }}>
-            {/* <FooterBottom_1 />
-            <FooterBottom_2 /> */}
+            <FooterBottom_1 />
+            <FooterBottom_2 />
           </div>
           <div className="footer_copyRight">© 2022 J.Crew</div>
         </div>
