@@ -3,14 +3,14 @@ import { Link, Route, Routes } from "react-router-dom";
 import styles from "./styles/Navbar.module.css";
 import { HeartIcon, MainLogo } from "./SvgIcons";
 import { useDispatch, useSelector } from "react-redux";
-// import { openLogin } from "../features/Login/LoginSlice";
-// import { User } from "./Icons";
+import { openLogin } from "../features/Login/LoginSlice";
+import { User } from "./Icons";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   //   const { cartItems, cartTotalItems } = useSelector((store) => store.product);
   // console.log("cartItems: ", cartItems);
-  //   const { isLogin } = useSelector((store) => store.login);
+  const { isLogin } = useSelector((store) => store.login);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   return (
@@ -69,7 +69,12 @@ export default function Navbar() {
             style={{ height: 36, width: 180 }}
           ></input>
         </div>
-
+        <div
+          className={styles.nav_logIN}
+          onClick={isLogin ? undefined : () => dispatch(openLogin())}
+        >
+          {isLogin ? <User /> : "Sign In"}
+        </div>
         <div className={styles.nav_icons}>
           <HeartIcon />
         </div>

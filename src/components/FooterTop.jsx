@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./styles/FooterTop.module.css";
-// import { Twitter } from "./SvgIcons";
+import { Twitter } from "./SvgIcons";
 
 export default function FooterTop() {
   return (
     <div className={styles.parent}>
       <div className={styles.main}>
         <div className={styles.inner}>
-          {/* <i className="fa-brands fa-twitter"></i> */}
-          {/* <Twitter /> */}
+          <i className="fa-brands fa-twitter"></i>
+          <Twitter />
           @jcrew_help
         </div>
         <div className={styles.inner}>
