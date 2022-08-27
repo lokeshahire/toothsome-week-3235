@@ -15,9 +15,9 @@ import { SubdirectoryArrowLeft } from "@mui/icons-material";
 import { get_home_products } from "../features/Home/HomeSlice";
 //import HomeProductPage from "./HomeProduct/HomePage";
 
-// import FinalPayment from "./FinalPayment";
-// import Cart from "./Cart";
-// import Checkout from "./Checkout";
+import FinalPayment from "./FinalPayment";
+import Cart from "./Cart";
+import Checkout from "./Checkout";
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -32,6 +32,9 @@ export default function Index() {
       <Routes>
         <Route exact path="/" element={<MainPage />}></Route>
         <Route exact path="/products/mens" element={<ProductPage />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/checkOut" element={<Checkout />} />
+        <Route exact path="/checkOut/payment" element={<FinalPayment />} />
 
         {/* 
                 
@@ -41,9 +44,8 @@ export default function Index() {
          */}
 
         {/* <Route exact path="/stories" element={<Story />} />
-        <Route exact path="/checkOut" element={<Checkout />} />
-        <Route exact path="/checkOut/payment" element={<FinalPayment />} />
-        <Route exact path="/cart" element={<Cart />} /> */}
+      
+         */}
       </Routes>
 
       <Footer />

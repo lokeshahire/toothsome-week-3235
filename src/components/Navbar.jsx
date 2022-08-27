@@ -8,15 +8,19 @@ import { User } from "./Icons";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  //   const { cartItems, cartTotalItems } = useSelector((store) => store.product);
+  const { cartItems, cartTotalItems } = useSelector((store) => store.product);
   // console.log("cartItems: ", cartItems);
   const { isLogin } = useSelector((store) => store.login);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  function logofun() {
+    window.location.href = "/";
+  }
+
   return (
     <div className={styles.nav_parent}>
       <div className={styles.nav_logo}>
-        <MainLogo />
+        <MainLogo style={{ cursor: "pointer" }} onClick={logofun} />
         <div className={styles.nav_linkWrap}>
           <Link to="/products/mens">
             <h4>New</h4>
@@ -88,6 +92,11 @@ export default function Navbar() {
             src="https://www.jcrew.com/next-static/images/jcrew/svg/icon_bag_d.svg"
             alt=""
           />
+          {cartItems.length != 0 ? (
+            <div className={styles.amount_container}>
+              <p className={styles.total_amount}>{cartTotalItems}</p>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
