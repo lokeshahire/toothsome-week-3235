@@ -16,96 +16,171 @@ export default function MainPage() {
   return (
     <div className={styles.mainParent}>
       <div className={styles.MainPageTop}>
-        <Link to="/products/mens">
+        <Link
+          to="/products/mens"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <div
             style={{
-              color: "white",
-              width: "50%",
+              width: "100%",
               height: "100%",
-              padding: "0 100px",
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "center",
-              justifyContent: "center",
+
+              backgroundImage: `url("https://raw.githubusercontent.com/lokeshahire/ImageGit/main/image.png")`,
+              backgroundSize: "1600px 900px",
+              backgroundRepeat: "no-repeat",
             }}
           >
-            <h1 style={{ fontSize: 50, fontStyle: "italic" }}>
-              Your Dress Destination
-            </h1>
-            <h4 style={{ marginTop: 20, fontSize: 22 }}>
-              Find your perfect print, shade and silhouette for summer.
-            </h4>
-            <h5
+            <p style={{ fontSize: 20, paddingTop: 200, paddingLeft: 300 }}>
+              Introducing
+            </p>
+            <p
               style={{
-                marginTop: 20,
-                textDecoration: "underline",
-                fontSize: 18,
+                marginTop: 10,
+                marginLeft: 160,
+                fontSize: 90,
+                fontWeight: "light",
+                fontFamily: "freight-big-pro, FreightBig Pro,Times,serif",
               }}
             >
-              Shop new Dresses
-            </h5>
+              ITALIAN <br />{" "}
+              <i
+                style={{
+                  marginLeft: 110,
+                  fontSize: 90,
+                  fontFamily: "freight-big-pro, FreightBig Pro,Times,serif",
+                }}
+              >
+                city wool
+              </i>
+            </p>
+            <p
+              style={{
+                marginTop: 20,
+                marginLeft: 210,
+
+                fontSize: 20,
+                color: "white",
+              }}
+            >
+              Our soft yet structured take on suiting, <br /> in a luxe fabric
+              from Prato, Italy.
+            </p>
           </div>
         </Link>
       </div>
       <div className={styles.MainPage_SubTop}>
         <div className={styles.SubTop_1}>
-          <Link to="/products/mens">
-            <div>
-              <h1 style={{ fontSize: 40 }}>Swim for every body</h1>
-              <h3 style={{ fontSize: 20, fontWeight: 400 }}>
-                In sizes XXS-3X and 0-24, plus long-torso styles
-              </h3>
-              <h4 style={{ textDecoration: "underline" }}>Find your fit</h4>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img1.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <p style={{ fontSize: 40, marginTop: "-100px" }}>
+                New <i>fall </i>ARRIVALS
+              </p>
+              <p style={{ fontSize: 20, fontWeight: 400 }}>
+                for your work/life style
+              </p>
+              <h3 style={{ textDecoration: "underline" }}>Shop Now</h3>
             </div>
           </Link>
         </div>
         <div className={styles.SubTop_2}>
-          <Link to="/products/mens">
-            <div>
-              <h3 style={{ fontSize: 20, fontWeight: 400 }}>Pant Spotlight</h3>
-              <h1 style={{ fontSize: 40 }}>The Astrid wide-leg chino</h1>
+          <Link to="/products/mens" style={{ textDecoration: "none" }}>
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img2.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <p style={{ fontSize: 40, fontWeight: 400 }}>
+                Meet <i>Louisa</i> , <br /> our latest lady jacket
+              </p>
+
               <h4 style={{ textDecoration: "underline" }}>Shop now</h4>
             </div>
           </Link>
         </div>
         <div className={styles.SubTop_3}>
-          <Link to="/products/mens">
-            <div>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img3.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
               <h1 style={{ fontSize: 40, fontWeight: 600 }}>
-                The new must-haves for summer
+                Fresh cashmere colors
               </h1>
-              <h4 style={{ textDecoration: "underline" }}>Find your fit</h4>
+              <h4 style={{ textDecoration: "none" }}>Find your fit</h4>
             </div>
           </Link>
         </div>
         <div className={styles.SubTop_4}>
-          <Link to="/products/mens">
-            <div>
-              <h1 style={{ fontSize: 40 }}>The linen shop is open</h1>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img4.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <p style={{ fontSize: 40 }}>Lightweight, luxe merino wool</p>
 
-              <h4 style={{ textDecoration: "underline" }}>Lighten up</h4>
+              <h4 style={{ textDecoration: "none" }}>Lighten up</h4>
             </div>
           </Link>
         </div>
         <div className={styles.SubTop_5}>
-          <Link to="/products/mens">
-            <div>
-              <h1 style={{ fontSize: 40 }}>
-                It's a busiest wedding season ever...
-              </h1>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img5.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <p>Pant spotlight:</p>
+              <h1 style={{ fontSize: 40 }}>The Kate straight-leg</h1>
 
-              <h4 style={{ textDecoration: "underline" }}>
-                Outfit every dress code
+              <h4 style={{ textDecoration: "none" }}>
+                now in four-season stretch
               </h4>
             </div>
           </Link>
         </div>
         <div className={styles.SubTop_6}>
-          <Link to="/products/mens">
-            <div>
-              <h3 style={{ fontSize: 20, fontWeight: 400 }}>Meet the</h3>
-              <h1 style={{ fontSize: 40 }}>Cotton-linen beach sweater</h1>
-              <h4 style={{ textDecoration: "underline" }}>Shop 5 shades</h4>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <div
+              style={{
+                backgroundImage: `url("https://www.jcrew.com/brand_creative/homepage2022/09-Sep2/2022sep_0823_hp_w_img6.jpg")`,
+                backgroundSize: "700px 800px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <p style={{ fontSize: 40 }}>
+                Introducing the <br /> Anya scrunchie ballet
+              </p>
             </div>
           </Link>
         </div>
@@ -144,22 +219,30 @@ export default function MainPage() {
 
       <div className={styles.mainMid}>
         <div className={styles.headlineHed}>
-          <Link to="/products/mens">
-            <img
-              className={styles.headImg}
-              src="https://www.jcrew.com/brand_creative/2022/202204-Apr/logo_jcrew_collective_20220315_blk.png?imformat=generic"
-              alt=""
-            />
-            <div className={styles.headDes}>
-              Meet our creative community
-              <i className="fa-solid fa-arrow-right-long"></i>
+          <Link
+            to="/products/mens"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <div>
+              <img
+                className={styles.headImg}
+                src="https://www.jcrew.com/brand_creative/2022/202204-Apr/logo_jcrew_collective_20220315_blk.png?imformat=generic"
+                alt=""
+              />
+              <div className={styles.headDes}>
+                Meet our creative community
+                <i className="fa-solid fa-arrow-right-long"></i>
+              </div>
             </div>
           </Link>
         </div>
 
         <div className={styles.mainMidImg}>
           <div className={styles.mainMidImgWrap}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May2/2022may_0503_hp_w_img7.jpg"
                 alt=""
@@ -172,7 +255,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.mainMidImgWrap}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May2/2022may_0503_hp_w_img8.jpg"
                 alt=""
@@ -185,7 +271,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.mainMidImgWrap}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May2/2022may_0503_hp_w_img9.jpg"
                 alt=""
@@ -210,7 +299,10 @@ export default function MainPage() {
         </span>
         <div className={styles.mainMidBottom}>
           <div>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May/2022may_0426_hp_w_img11.jpg"
                 alt=""
@@ -220,7 +312,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May/2022may_0426_hp_w_img12.jpg"
                 alt=""
@@ -232,7 +327,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May/2022may_0426_hp_w_img13_new.jpg"
                 alt=""
@@ -244,7 +342,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/brand_creative/homepage2022/05-May/2022may_0426_hp_w_img14.jpg"
                 alt=""
@@ -262,7 +363,10 @@ export default function MainPage() {
         <h2 style={{ fontSize: 36, fontWeight: 400 }}>More you need to see</h2>
         <div className={styles.aboveFooterImgWrap}>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/BH290_BL8486_m?wid=416"
                 alt=""
@@ -273,7 +377,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/AY671_BK0001?wid=416"
                 alt=""
@@ -284,7 +391,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/BG652_SU8788_m?wid=416"
                 alt=""
@@ -295,7 +405,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/AW770_OR5787_m?wid=416"
                 alt=""
@@ -306,7 +419,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/BL371_BL8133_m?wid=416"
                 alt=""
@@ -317,7 +433,10 @@ export default function MainPage() {
             </Link>
           </div>
           <div className={styles.aboveFooterInner}>
-            <Link to="/products/mens">
+            <Link
+              to="/products/mens"
+              style={{ textDecoration: "none", color: "black" }}
+            >
               <img
                 src="https://www.jcrew.com/s7-img-facade/BC108_BL8133_m?wid=416"
                 alt=""
