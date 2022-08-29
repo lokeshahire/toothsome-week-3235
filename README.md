@@ -42,7 +42,7 @@ The tech Stack we used for creating this website are :
 ![HOMEPAGE](https://github.com/lokeshahire/ImageGit/blob/main/Landing.png)
 <br>
 <br>
-
+#
 ![HOMEPAGE](https://github.com/lokeshahire/ImageGit/blob/main/HomePage.png)
 <br>
 <br>
@@ -61,7 +61,7 @@ The tech Stack we used for creating this website are :
 ![PRODUCT Page](https://github.com/lokeshahire/ImageGit/blob/main/Product.png)
 <br>
 <br>
-
+#
 ![PRODUCT Preview Page](https://github.com/lokeshahire/ImageGit/blob/main/Product%20Preview.png)
 <br>
 <br>
