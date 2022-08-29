@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# J.Crew Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my Individual Project on "https://jcrew.com/in" under Construct Week of UNIT - 4 in MASAI FULLSTACK WEB DEVELOPMENT COURSE.
 
-## Available Scripts
+                                             " About Project "
 
-In the project directory, you can run:
+# We build mainly 6 pages :-
 
-### `npm start`
+1. HomePage (Landing page)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Signup Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Login Page
 
-### `npm test`
+4. Product Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Cart Page
 
-### `npm run build`
+6. Payment Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The tech Stack we used for creating this website are :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p ><img src="https://camo.githubusercontent.com/237fc767e09cfe6129076f3e89080a6b5ac5d2ac0ec717880e57435be932ba15/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f3232362f3232363236392e706e67" width="20/" data-canonical-src="https://cdn-icons-png.flaticon.com/512/226/226269.png" style="max-width: 100%;"> HTML</p>
 
-### `npm run eject`
+<p ><img src="https://camo.githubusercontent.com/809a763f1c8f3497709ff0a974bfe7dd11be4dd7a29085645f8e98fbaa4a26e4/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f3733322f3733323139302e706e67" width="20" data-canonical-src="https://cdn-icons-png.flaticon.com/512/732/732190.png" style="max-width: 100%;"> CSS</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p ><img src="https://camo.githubusercontent.com/77b9ef5fd4b0a13ff3a0b2eccccefb810efe53205f1a2d9b0b8a03604816b825/68747470733a2f2f63646e2d69636f6e732d706e672e666c617469636f6e2e636f6d2f3531322f313139392f313139393132342e706e67" width="20/" data-canonical-src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" style="max-width: 100%;"> JavaScript</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p><img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="20/" data-canonical-src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" style="max-width: 100%;"/>  ReactJS</p>
+ 
+<h2>Contributor :</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ <p >Lokesh Ahire : <a href="https://github.com/lokeshahire">https://github.com/lokeshahire</a></p>
+ 
+     
+## Glimpse of Our work
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# HOMEPAGE :
 
-## Learn More
+![HOMEPAGE](https://github.com/lokeshahire/ImageGit/blob/main/Landing.png)
+<br>
+<br>
+![HOMEPAGE](https://github.com/lokeshahire/ImageGit/blob/main/HomePage.png)
+<br>
+<br>
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# LOGIN PAGE:
 
-### Code Splitting
+![LOGIN](https://github.com/lokeshahire/ImageGit/blob/main/Login.png)
+<br>
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# PRODUCT PAGE:
 
-### Analyzing the Bundle Size
+![PRODUCT Page](https://github.com/lokeshahire/ImageGit/blob/main/Product.png)
+<br>
+<br>
+![PRODUCT Preview Page](https://github.com/lokeshahire/ImageGit/blob/main/Product%20Preview.png)
+<br>
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# CART PAGE:
 
-### Making a Progressive Web App
+![CART](https://github.com/lokeshahire/ImageGit/blob/main/Cart.png)
+<br>
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# PAYMENT PAGE :
 
-### Advanced Configuration
+![PAYMENT](https://github.com/lokeshahire/ImageGit/blob/main/Payment.png)
+<br>
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Live Demo :
 
-### Deployment
+<p><a href="https://lokesh-jcrew-clone.netlify.app/">Live Project</a></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank You :)
